@@ -1,0 +1,206 @@
+/* Noto Sans 국문 'Noto Sans KR', sans-serif;  */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700;900&display=swap');
+
+/* Roboto 영문 font-family: 'Roboto', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;0,900;1,500;1,700;1,900&display=swap');
+
+/*font-family: 'Aboreto', cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+
+
+  
+
+
+html, body, .main__container {
+    height: 100%;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+ul{
+    list-style:none;
+}
+div{
+    padding:0;
+}
+/*one_page 속성*/
+.one_page{
+    height: 100%;
+}
+.padding_area{
+    padding:4rem;
+}
+.contents-padding{
+    padding-top:2rem;
+}
+
+
+/**************************/
+/****** 콘텐츠 영역   ******/
+/*************************/
+
+
+.my-contents{
+    overflow-y:scroll;
+    position:relative;
+    padding:0;
+}
+
+.main_title_area{
+    margin:0;
+    color: #Fff;
+}
+
+.main01{
+    background-color:#222;
+}
+.main01_text_strong{
+    color:#f12535;
+}
+.main_visual{
+    position:absolute;
+    color:#fff;
+    width:100%;
+    opacity: 0.02;
+    font-weight: 900;
+}
+.main_visual h1{
+    font-size:30em;
+}
+.main_text{
+    position:absolute;
+    top:10em;
+    left:5em;
+    font-family: 'Noto Sans KR', sans-serif;
+    color:#fff;
+    
+}
+.main_text h1{
+    font-size:72px;
+    font-style: unset;
+}
+
+.main_text02{
+    position:absolute;
+    display: flex;
+    bottom:10em;
+    right:5em;
+    font-size:2em;
+    font-family: 'Noto Sans KR', sans-serif;
+    color:#fff;
+}
+.main_text02 div{
+    margin-left:4rem;
+    text-align:right;
+    font-size:0.5em;
+}
+.main_text02 div p{
+    margin:0;
+    padding:0;
+}
+
+/* info 영역 */
+.info{
+    text-align: right;
+    margin-right:5em;
+}
+.detail_info{
+    margin-left:5em;
+}
+
+/**************************/
+/****** 카테고리 영역   ******/
+/*************************/
+.my-category{
+    height: 100%;
+}
+
+
+.my-category{
+    position: relative;
+    background-color: #2a2c2d;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    color:#fff;
+}
+.category_top{
+    padding-top:2rem;
+    padding-bottom: 2rem;
+}
+.profile_img{
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    background-image:  url('../image/bg01.jpeg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+.profile_name{
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.profile_icon{
+    padding:0;
+    display: flex;
+    justify-content: center;
+}
+.profile_icon li{
+    width:1.5rem;
+    margin-left:0.5rem;
+    margin-right:0.5rem;
+}
+.profile_icon li a svg{
+    width: 100%;
+    height: 100%;
+}
+.category_label_area{
+    font-family: 'Aboreto', cursive;
+    padding:0;
+}
+.category_label{
+    text-align: center;
+    font-size:1.5rem;
+}
+.category_label p{
+    margin-bottom:2rem;
+    width: 100%;
+}
+
+
+/*포트폴리오 css*/
+.fo-img{
+    width:100%;
+    height:40%;
+}
+
+.fo-title{
+    width: 100%;
+    font-size:1.5rem;
+    font-weight:600;
+}
+.fo-text{
+    width: 100%;
+}
+
+
+
+/* window 사이즈가 모바일 사이즈 일 경우*/
+@media all and (max-width:767px){
+    .my-category{
+        display: none;
+    }
+}
+/* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/ 
+@media all and (min-width:768px) and (max-width:1023px) {
+    .my-category{
+        display: none;
+    }
+} 
+
+/* window 사이즈가 pc 사이즈 일 경우*/
+@media all and (min-width:1024px) {
+    .my-category{
+        display: block;
+    }
+} 
