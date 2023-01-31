@@ -43,7 +43,6 @@ div{
     font-size:5rem;
 }
 
-
 /* main05 Contact 영역*/
 
 /**************************/
@@ -143,20 +142,17 @@ div{
     .my-category{
         display: block;
     }
-
     
     /**************************/
     /****** 콘텐츠 영역   ******/
     /*************************/
-
-
 
     .my-contents{
         overflow-y:scroll;
         position:relative;
         padding:0;
     }
-
+    
     .main_title_area{
         margin:0;
         color: #Fff;
@@ -237,8 +233,12 @@ div{
         
     }
     .main_text h1{
-        font-size:6vw;
+        font-size:5vw;
         font-style: unset;
+    } 
+
+    .main_text p{
+        font-size:1vw;
     }
 
     .main_text02{
