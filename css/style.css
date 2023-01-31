@@ -25,6 +25,9 @@ div{
 .one_page{
     height: 100%;
 }
+.half_page{
+    height: 70%;
+}
 .padding_area{
     padding:4rem;
 }
@@ -33,202 +36,15 @@ div{
 }
 
 .small_text{
-    font-size:14px;
+    font-size:0.8rem;
 }
-
-/**************************/
-/****** 콘텐츠 영역   ******/
-/*************************/
-
-
-
-.my-contents{
-    overflow-y:scroll;
-    position:relative;
-    padding:0;
-}
-
-.main_title_area{
-    margin:0;
-    color: #Fff;
-}
-
-.main01, .main02, .main03, .main04{
-    background-color:#1a1818;
-}
-.main02,.main03{
-    position: relative;
-    z-index: 1;
+.title_style{
+    font-family: 'Aboreto', cursive;
+    font-size:5rem;
 }
 
 
-.main01_text_strong{
-    color:#f12535;
-}
-.main_visual{
-    margin:0;
-    position:absolute;
-    color:#fff;
-    width:100%;
-    opacity: 0.02;
-    font-weight: 900;
-    overflow: hidden;
-    left: 0;
-    right: 0;
-    top: 50%;
-    transform: translate(0,-50%);
-}
-.main_visual_img{
-    background-image:url(/image/main_text02.png);
-    height: 260px;
-    width: 300%;
-    padding: 110px 20px 50px;
-    position:relative;
-    background-repeat: repeat-x;
-    background-position: 0 40%;
-    background-size: 1162px;
-    /* 애니메이션 이름 */
-    animation-duration: 16s;
-    animation-timing-function: linear;
-    animation-delay: 0s;
-    animation-iteration-count: infinite;
-    animation-direction: normal;
-    animation-fill-mode: none;
-    animation-play-state: running;
-    animation-name: imgslide;
-
-}
-/* 키프레임 이름 = 애니메이션 이름 */
-@-webkit-keyframes imgslide {
-    from {
-      right:0;
-    }
-    to {
-      right:100%;
-    }
-  }
-
-
-.main_visual h1{
-    font-size:30em;
-}
-.main_text_area{
-    position:absolute;
-    left:0;
-    right:0;
-    top:50%;
-    transform:translate(0,-50%);
-}
-
-.main_text{
-    font-family: 'Noto Sans KR', sans-serif;
-    color:#fff;
-    width:76vw;
-    margin:0 auto;
-    
-}
-.main_text h1{
-    font-size:72px;
-    font-style: unset;
-}
-
-.main_text02{
-    width:76vw;
-    margin:60px auto 0;
-    font-size:2em;
-    font-family: 'Noto Sans KR', sans-serif;
-    color:#fff;
-    text-align:right;
-}
-.main_text02 dl{
-    font-size:0.5em;
-    display: inline-block;
-    vertical-align: top;
-    max-width: 240px;
-    text-align: left;
-    font-size:24px;
-}
-.main_text02 dl:nth-child(2),.main_text02 dl:nth-child(3){
-    margin-left:50px; 
-}
-.main_text02 dt{
-    padding-bottom:10px;
-}
-.main_text02 dl p{
-    margin:0;
-    padding:0;
-    font-size:18px;
-}
-
-/* main02 info 영역 */
-.detail_background{
-    position: absolute;
-    opacity: 0.4;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    background-image: url(/image/background.jpg);
-    background-size: cover;
-    background-position: center;
-    
-}
-
-.detail_info{
-    position:absolute;
-    left:0;
-    right:0;
-    top:50%;
-    transform:translate(0,-50%);
-}
-
-.detail_title, .detail_text_area{
-    font-family: 'Noto Sans KR', sans-serif;
-    color:#fff;
-    width:76vw;
-    margin:0 auto;
-}
-.detail_tag{
-    font-size:22px;
-    padding-right:100px;
-}
-
-/* main03 포트폴리오 영역*/
-.main03_contents{
-    z-index: 1;
-    margin:0;
-    position:absolute;
-    color:#fff;
-    width:100%;
-    font-weight: 900;
-    overflow: hidden;
-    left: 0;
-    right: 0;
-    top: 50%;
-    transform: translate(0,-50%);
-}
-.main03_background{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(#421a1d, transparent);
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-}
-
-.fo_contents, .main03_title{
-    font-family: 'Noto Sans KR', sans-serif;
-    color:#fff;
-    width:76vw;
-    margin:0 auto;
-}
-.fo_card{
-    padding:2vw;
-}
-.main03_title{
-    margin-bottom:48px;
-}
-
+/* main05 Contact 영역*/
 
 /**************************/
 /****** 카테고리 영역   ******/
@@ -326,5 +142,251 @@ div{
 @media all and (min-width:1024px) {
     .my-category{
         display: block;
+    }
+
+    
+    /**************************/
+    /****** 콘텐츠 영역   ******/
+    /*************************/
+
+
+
+    .my-contents{
+        overflow-y:scroll;
+        position:relative;
+        padding:0;
+    }
+
+    .main_title_area{
+        margin:0;
+        color: #Fff;
+    }
+
+    .main01, .main02, .main03, .main04, .main05{
+        background-color:#1a1818;
+    }
+    .main02,.main03, .main04, .main05{
+        position: relative;
+        z-index: 1;
+    }
+
+
+    .main01_text_strong{
+        color:#f12535;
+    }
+    .main_visual{
+        margin:0;
+        position:absolute;
+        color:#fff;
+        width:100%;
+        opacity: 0.02;
+        font-weight: 900;
+        overflow: hidden;
+        left: 0;
+        right: 0;
+        top: 50%;
+        transform: translate(0,-50%);
+    }
+    .main_visual_img{
+        background-image:url(/image/main_text02.png);
+        height: 260px;
+        width: 300%;
+        padding: 110px 20px 50px;
+        position:relative;
+        background-repeat: repeat-x;
+        background-position: 0 40%;
+        background-size: 1162px;
+        /* 애니메이션 이름 */
+        animation-duration: 16s;
+        animation-timing-function: linear;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+        animation-fill-mode: none;
+        animation-play-state: running;
+        animation-name: imgslide;
+
+    }
+    /* 키프레임 이름 = 애니메이션 이름 */
+    @-webkit-keyframes imgslide {
+        from {
+        right:0;
+        }
+        to {
+        right:100%;
+        }
+    }
+
+
+    .main_visual h1{
+        font-size:30em;
+    }
+    .main_text_area{
+        position:absolute;
+        left:0;
+        right:0;
+        top:50%;
+        transform:translate(0,-50%);
+    }
+
+    .main_text{
+        font-family: 'Noto Sans KR', sans-serif;
+        color:#fff;
+        width:76vw;
+        margin:0 auto;
+        
+    }
+    .main_text h1{
+        font-size:6vw;
+        font-style: unset;
+    }
+
+    .main_text02{
+        width:76vw;
+        margin:60px auto 0;
+        font-size:2em;
+        font-family: 'Noto Sans KR', sans-serif;
+        color:#fff;
+        text-align:right;
+    }
+    .main_text02 dl{
+        font-size:0.5em;
+        display: inline-block;
+        vertical-align: top;
+        max-width: 240px;
+        text-align: left;
+        font-size:24px;
+    }
+    .main_text02 dl:nth-child(2),.main_text02 dl:nth-child(3){
+        margin-left:50px; 
+    }
+    .main_text02 dt{
+        padding-bottom:10px;
+    }
+    .main_text02 dl p{
+        margin:0;
+        padding:0;
+        font-size:18px;
+    }
+
+    /* main02 info 영역 */
+    .detail_background{
+        position: absolute;
+        opacity: 0.4;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        background-image: url(/image/background.jpg);
+        background-size: cover;
+        background-position: center;
+        
+    }
+
+    .detail_info{
+        position:absolute;
+        left:0;
+        right:0;
+        top:30%;
+        transform:translate(0,-30%);
+    }
+
+    .detail_title, .detail_text_area{
+        font-family: 'Noto Sans KR', sans-serif;
+        color:#fff;
+        width:76vw;
+        margin:0 auto;
+    }
+    .detail_title{
+        margin-bottom:72px;
+    }
+    .detail_text{
+        border-left:solid #fff;
+    }
+    .detail_tag{
+        font-size:26px;
+        padding-right:100px;
+    }
+
+    .detail_tag p{
+        margin-bottom:100px;
+    }
+
+    .detail_activate{
+        color:#f12535;
+        font-weight:900;
+        text-decoration: underline;
+    }
+
+    /* main03 포트폴리오 영역*/
+    .main03_contents{
+        z-index: 1;
+        margin:0;
+        position:absolute;
+        color:#fff;
+        width:100%;
+        font-weight: 900;
+        overflow: hidden;
+        left: 0;
+        right: 0;
+        top: 50%;
+        transform: translate(0,-50%);
+    }
+    .main03_background{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(#421a1d, transparent);
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+    }
+
+    .fo_contents, .main03_title{
+        font-family: 'Noto Sans KR', sans-serif;
+        color:#fff;
+        width:76vw;
+        margin:0 auto;
+    }
+    .fo_card{
+        padding:2vw;
+    }
+    .main03_title{
+        margin-bottom:48px;
+    }
+
+    /* main04 스킬 영역*/
+    .main04_area{
+        z-index: 1;
+        margin:0;
+        position:absolute;
+        color:#fff;
+        width:100%;
+        font-weight: 900;
+        overflow: hidden;
+        left: 0;
+        right: 0;
+        top: 50%;
+        transform: translate(0,-50%);
+    }
+    .main04_title{
+        font-family: 'Noto Sans KR', sans-serif;
+        color:#fff;
+        width:76vw;
+        margin:0 auto;
+        margin-bottom:72px;
+    }
+    .main04_contents{
+        width:76vw;
+        margin:0 auto;
+    }
+
+    .skill_card{
+        border-top : solid #fff;
+    }
+    .skill_card dt{
+        
+        margin-top: 1vw;
+        margin-bottom: 1vw;
+        font-size:1.5rem;
     }
 } 
